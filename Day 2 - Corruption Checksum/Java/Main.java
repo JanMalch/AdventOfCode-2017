@@ -1,16 +1,11 @@
-
-import java.util.ArrayList;
-
-
 public class Main {
 
     public static void main(String[] args) {
         String input = "...";
 
-
         String[] rows = input.split("\n");
 
-        ArrayList<Integer> differences = new ArrayList<>();
+        int sum = 0;
 
         for(String row : rows) {
 
@@ -30,18 +25,11 @@ public class Main {
                 }
             }
 
-			differences.add(maximum - minimum);
+            sum += maximum - minimum;
 
         }
-
-        int sum = 0;
-
-        for(int i : differences) {
-            sum += i;
-        }
-
+        
         System.out.println(sum);
-
     }
 
 }

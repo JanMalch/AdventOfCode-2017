@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main2 {
@@ -9,7 +8,7 @@ public class Main2 {
 
         String[] rows = input.split("\n");
 
-        ArrayList<Integer> sumHelper = new ArrayList<>();
+        int sum = 0;
 
         for (String row : rows) {
 
@@ -29,22 +28,10 @@ public class Main2 {
                 }
             }
 
-            if (digitA > digitB) {
-                sumHelper.add(digitA / digitB);
-            } else {
-                sumHelper.add(digitB / digitA);
-            }
-
-        }
-
-        int sum = 0;
-
-        for (int i : sumHelper) {
-            sum += i;
+            sum += digitA / digitB;
         }
 
         System.out.println(sum);
-
     }
 
 }
