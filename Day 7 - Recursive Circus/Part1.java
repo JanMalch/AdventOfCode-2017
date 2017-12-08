@@ -3,15 +3,15 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 
-public class Main {
+public class Part1 {
 
     public static void main(String[] args) throws IOException {
-        new Main();
+        new Part1();
     }
 
     private String[] lines;
 
-    Main() throws IOException {
+    Part1() throws IOException {
         readInput();
         find();
     }

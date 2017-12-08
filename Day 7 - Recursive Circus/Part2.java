@@ -3,16 +3,16 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 
-public class Main2 {
+public class Part2 {
     public static void main(String[] args) throws IOException {
-        new Main2();
+        new Part2();
     }
 
     String[] input;
     ArrayList<Node<Element>> nodes;
     Node<Element> root = null;
 
-    Main2() throws IOException {
+    Part2() throws IOException {
         readInput();
         this.nodes = new ArrayList<>(input.length);
         find();

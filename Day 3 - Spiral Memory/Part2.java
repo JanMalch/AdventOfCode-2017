@@ -1,4 +1,4 @@
-public class Main2 {
+public class Part2 {
 
     public static int x;
     public static int y;
