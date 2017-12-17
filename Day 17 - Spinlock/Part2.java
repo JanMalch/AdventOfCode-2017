@@ -3,9 +3,6 @@ import java.util.Arrays;
 public class Part2 {
 
     public static void main(String[] args) {
-        ArrayList<Integer> values = new ArrayList<>();
-        values.add(0);
-
         int input = 369;
         int position = 0;
         int numberAfterZero = -1;
